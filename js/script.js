@@ -1,9 +1,7 @@
-// This example uses the autocomplete feature of the Google Places API.
-// It allows the user to find all hotels in a given place, within a given
-// country. It then displays markers for all the hotels returned,
-// with on-click details for each hotel.
-
-
+// The shell for this code came from the Google Places API Documentation, which can be found at the below link
+// https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch
+// The purpose of this code is to utilise the Google Places Autocomplete
+// to return results for 3 location types: Accommodation, attractions, bars/restaurants
 
 var map, places, infoWindow;
 var markers = [];
