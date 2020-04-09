@@ -52,7 +52,7 @@ header {
 
 /* Results */
 
-.results, #results {
+.results-heading {
     background-color: #E55934;
     color: #50C9CE;
     font-size: 25px;
@@ -69,9 +69,57 @@ header {
     border-color: #000;
 }
 
-#attr-results, #accom-results, #bars-results, #results {
-    height:50vh;
-    width:auto;
+#hotelResults, #attrResults, #barsResults {
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+    height: auto;
+    width: auto;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+    
+} 
+
+.hotel-list, .bars-list, .attr-list {
+  height: 30vh;
+  overflow: auto;
+  top: 0px;
+  cursor: pointer;
+  overflow-x: hidden;
+  margin: 5px 0;
+}
+
+.placeIcon {
+  margin: 4px;
+}
+
+.hotelIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.results-table {
+  border-collapse: collapse;
+  display: block;
+  text-align: -webkit-center;
+}
+
+#rating {
+  font-size: 13px;
+}
+
+/* Table */ 
+
+.iw_table_row {
+  height: 18px;
+}
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
+}
+.iw_table_icon {
+  text-align: right;
 }
 
 /* Map */
@@ -91,56 +139,7 @@ header {
 
 
 @media (min-width: 991px) {
-    .results {
+    .results-heading {
         font-size: 18px;
     }
-}
-
-table {
-  font-size: 12px;
-}
-
-#listing {
-  position: relative;
-  width: 100%;
-  height: 470px;
-  overflow: auto;
-  top: 0px;
-  cursor: pointer;
-  overflow-x: hidden;
-}
-#findhotels {
-  font-size: 14px;
-}
-
-#controls {
-  -webkit-box-flex: 1 1 140px;
-  -ms-flex: 1 1 140px;
-  flex: 1 1 140px;
-}
-
-.placeIcon {
-  width: 20px;
-  height: 34px;
-  margin: 4px;
-}
-.hotelIcon {
-  width: 24px;
-  height: 24px;
-}
-#resultsTable {
-  border-collapse: collapse;
-}
-#rating {
-  font-size: 13px;
-}
-.iw_table_row {
-  height: 18px;
-}
-.iw_attribute_name {
-  font-weight: bold;
-  text-align: right;
-}
-.iw_table_icon {
-  text-align: right;
 }

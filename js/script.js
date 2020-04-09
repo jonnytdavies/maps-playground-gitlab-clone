@@ -97,7 +97,7 @@ function initMap() {
     }
 
     function addResult(result, i) {
-        var results = document.getElementById('results');
+        var results = document.getElementById('hotelResults');
         var markerIcon = "http://maps.google.com/mapfiles/kml/pal2/icon20.png";
 
         var tr = document.createElement('tr');
@@ -121,9 +121,9 @@ function initMap() {
     }
 
     function clearResults() {
-        var results = document.getElementById('results');
+        var results = document.getElementById('hotelResults');
         while (results.childNodes[0]) {
-            results.removeChild(results.childNodes[0]);
+            results.removeChild(hotelResults.childNodes[0]);
         }
     }
 
