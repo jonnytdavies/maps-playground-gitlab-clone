@@ -52,7 +52,7 @@ header {
 
 /* Results */
 
-.results {
+.results, #results {
     background-color: #E55934;
     color: #50C9CE;
     font-size: 25px;
@@ -72,7 +72,6 @@ header {
 #attr-results, #accom-results, #bars-results, #results {
     height:50vh;
     width:auto;
-    display: none;
 }
 
 /* Map */
@@ -102,7 +101,7 @@ table {
 }
 
 #listing {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 470px;
   overflow: auto;
